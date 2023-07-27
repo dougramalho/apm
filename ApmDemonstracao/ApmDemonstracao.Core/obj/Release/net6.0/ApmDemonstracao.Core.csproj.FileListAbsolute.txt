@@ -1,0 +1,12 @@
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\bin\Release\net6.0\ApmDemonstracao.Core.deps.json
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\bin\Release\net6.0\ApmDemonstracao.Core.dll
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\bin\Release\net6.0\ApmDemonstracao.Core.pdb
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\ApmDemonstracao.Core.csproj.AssemblyReference.cache
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\ApmDemonstracao.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\ApmDemonstracao.Core.AssemblyInfoInputs.cache
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\ApmDemonstracao.Core.AssemblyInfo.cs
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\ApmDemonstracao.Core.csproj.CoreCompileInputs.cache
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\ApmDemonstracao.Core.dll
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\refint\ApmDemonstracao.Core.dll
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\ApmDemonstracao.Core.pdb
+D:\squadralabs\ApmDemonstracao\ApmDemonstracao.Core\obj\Release\net6.0\ref\ApmDemonstracao.Core.dll

@@ -1,0 +1,53 @@
+version: '3.4'
+services:
+  apmdemo:
+    image: apmdemonstracao
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ElasticApm:ServerUrls=http://apm-server:8200
+      - ElasticApm:ServiceName=ApmDemonstracao
+      - ElasticApm:Environment=development
+    depends_on:
+      - db
+      - rabbitmq
+      - apm-server
+
+  db:
+    image: mongo
+    ports:
+      - 27017:27017
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 15672:15672
+      - 5672:5672
+
+  apm-server:
+    image: docker.elastic.co/apm/apm-server:7.14.0
+    command: >
+      apm-server -e
+        -E output.elasticsearch.hosts=["elasticsearch:9200"]
+    ports:
+      - 8200:8200
+    depends_on:
+      - elasticsearch
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 9200:9200
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.14.0
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
